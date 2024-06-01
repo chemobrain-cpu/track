@@ -23,7 +23,6 @@ module.exports.trackResult = async (req, res, next) => {
          wpcargo_tracking_number,
       } = req.body
 
-      
 
       let foundCossinment = await Cossignment.findOne({courier_Reference_No: wpcargo_tracking_number })
 
